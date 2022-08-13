@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+    color: black;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+h5{
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    padding: 40px 0;
+}
+
+body{
+    width: 100%;
+    background-color: RGBA(169, 176, 178,10%);
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px;
+    background: #ecf8ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 40%);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: cadetblue;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: cadetblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#main{
+    background-image: url("assets/images/mainPoster.jpeg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 35% right 3%;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main p{
+    color: white;
+}
+
+#main button{
+    /*background-image: url("assets/images/Blue_Gold2.png") ;*/
+    background-color: rgba(0,0,0, 0.4);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    color: rgba(255,255,255, 1);
+    border: 0;
+    background-position: top 70% left 40%;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow:0 5px 15px rgba(255, 255, 255, 50%);
+    transition: 0.3s ease;
+}
+#main button:hover{
+    color: rgba(0,0,0, 1);
+    background-color: rgba(255,255,255, 0.8);
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature a{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 80px;
+    font-weight: 600;
+    color: RGB(40, 119, 152);
+}
+
+#feature .feature-box{
+    width: 180px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0px 5px 20px RGBA(40, 119, 152, 40%);
+    border: 1px solid RGBA(40, 119, 152, 15%);
+    border-radius: 4px;
+    margin: 15px 0px;
+    background-color: white;
+}
+
+#feature .feature-box:hover{
+    box-shadow: 0 3px 12px RGBA(40, 119, 152, 60%);
+}
+
+#feature .feature-box h4{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: RGB(40, 119, 152);
+    font-size: 16px;
+}
+
+#products1{
+    text-align: center;
+}
+
+#products1 .productsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#products1 i{
+    font-size: 15px;
+}
+
+#products1 .product{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    /*border: 1px solid RGBA(40, 119, 152, 15%);*/
+    background-color: white;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#products1 .product:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#products1 .product img{
+     width: 100%;
+
+}
+
+#products1 .product .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#products1 .product .des h5{
+    color: dimgray;
+}
+
+#products1 .product .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    color: RGB(40, 119, 152);
+    border: 1px solid RGBA(40, 119, 152, 1%);
+    box-shadow: 0px 5px 25px rgba(40, 119, 152,0.2);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#products1 .product .cart:hover{
+    box-shadow: 0px 5px 25px rgba(0,0,0,0.2);
+}
+
+#banner{
+    background-image: url("assets/images/products/bannerBackground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 30%;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+
+}
+#banner button{
+    /*background-image: url("assets/images/Blue_Gold2.png") ;*/
+    background-color: rgba(255,255,255, 0.2);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    color: rgba(255,255,255, 1);
+    border: 0;
+    outline: none;
+    background-position: top 70% left 40%;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 50%);
+    transition: 0.3s ease;
+}
+#banner button:hover{
+    color: black;
+    background-color: RGBA(235, 214, 56, 0.7);
+}
+
+#midH1{
+    text-align: center;
+}
+
+#highlightBanner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+    padding: 150px 50px;
+}
+
+#highlightBanner .bannerBox {
+    /*background-image: url("assets/images/products/h1.webp");*/
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33%;
+    min-width: 250px;
+    padding: 10px 12px;
+    /*border: 1px solid RGBA(40, 119, 152, 15%);*/
+    background-color: transparent;
+    margin: 10px 0;
+    transition: 0.2s ease;
+}
+#highlightBanner .bannerBox img{
+    width: 100%;
+}
+#highlightBanner .bannerBox:hover button{
+background-color: RGB(40, 119, 152) ;
+    color: white;
+}
+
+#highlightBanner .bannerBox button{
+    background-color: rgba(255,255,255, 0.2);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    color: black;
+    outline: none;
+    background-position: top 70% left 40%;
+    margin-top: 4px;
+    padding: 4px 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+    border-bottom-color: RGB(40, 119, 152);
+    border-top-color: RGB(40, 119, 152);
+}
+
+#newsLetter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("assets/images/products/bannerNews.jpeg");
+    background-repeat: no-repeat;
+    background-position: 60% 60%;
+    height: 20vh;
+}
+
+#newsLetter span{
+    color: white;
+}
+
+#newsLetter form{
+    display: flex;
+    width: 50%;
+}
+#newsLetter input{
+    height: 3rem;
+    padding: 0 1rem;
+    border: 1px solid transparent;
+    width: 100%;
+    outline: none;
+}
+
+#newsLetter button{
+    background-color: rgba(255,255,255, 0.2);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    color: rgba(255,255,255, 1);
+    border: 0;
+    outline: none;
+    background-position: top 70% left 40%;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 50%);
+    transition: 0.3s ease;
+}
+
+footer{
+    background-color: #ecf8ff;
+    align-items: center;
+}
+
+footer h3{
+    border: 1px solid transparent;
+    margin-bottom: 13px;
+    text-decoration: underline;
+}
+
+footer a{
+    text-decoration: none;
+    color: RGB(40, 119, 152);
+}
+
+#columnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+
+#copyRight {
+    text-align: center;
+    margin: 18px 18px;
+}
+
+@media (max-width: 799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 100px;
+        background-color: #ecf8ff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 40%);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #cart{
+        display: none;
+    }
+    #mobile i{
+        color: black;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #main{
+        height: 70vh;
+        padding: 30px 80px;
+        background-position: top 35% right 5%;
+    }
+
+    #feature{
+        justify-content: center;
+    }
+
+    #feature .feature-box{
+        text-align: center;
+        margin: 10px 10px;
+    }
+
+    #products1 .productsContainer{
+        justify-content: center;
+    }
+
+    #products1 .productsContainer .product{
+        margin: 15px;
+    }
+
+    #banner{
+        height: 30vh;
+    }
+
+    #highlightBanner{
+        justify-content: center;
+        padding: 40px 3px;
+    }
+
+    #highlightBanner .bannerBox{
+        height: 40vh;
+    }
+
+    #newsLetter{
+        /*justify-content: center;*/
+        height: 20vh;
+    }
+    #newsLetter input{
+        height: 1rem;
+        padding: 0 0.2rem;
+    }
+
+    #newsLetter button{
+        border: 0;
+        height: 1rem;
+        padding: 5px 5px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+        box-shadow:0 5px 15px rgba(0, 0, 0, 60%);
+    }
+}
+@media (max-width: 477px) {
+    h1{
+        font-size: 30px;
+        line-height: 4px;
+        margin-bottom: 5px;
+    }
+
+    h2{
+        font-size: 26px;
+        line-height: 19px;
+    }
+
+    h3{
+        font-size: 13px;
+        line-height: 12px;
+    }
+
+    h4{
+        font-size: 9px;
+    }
+
+    h5{
+        font-size: 9px;
+    }
+    p{
+        font-size: 12px;
+        margin: 10px 0 10px 0;
+    }
+
+
+    .section-p1{
+        padding: 25px 15px;
+    }
+    #header{
+        padding: 2px 10px;
+    }
+
+    #main{
+        height: 50vh;
+    }
+
+    #feature .feature-box{
+        margin: 10px 5px;
+        width: 80px;
+        height: 80px;
+        padding: 5px 5px;
+    }
+    #feature a{
+        font-size: 40px;
+    }
+
+    #feature .feature-box h4{
+        padding: 4px 4px 4px 4px;
+        line-height: 1;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+    .des span{
+        font-size: 15px;
+    }
+
+
+
+    #products1 .productsContainer{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    #products1 .productsContainer .product{
+        width: 23%;
+        min-width: 140px;
+        padding: 5px 5px;
+        margin: 10px;
+        transition: 0.2s ease;
+        position: relative;
+    }
+    #products1 .stars{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 8px;
+    }
+    #products1 .product .cart{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50px;
+        bottom: 7px;
+        right: 7px;
+    }
+
+    #banner{
+        height: 23vh;
+    }
+
+    #banner h2{
+        font-size: 25px;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+
+    #banner button{
+        padding: 5px 25px;
+        margin-top: 10px;
+    }
+    #midH1{
+        margin-bottom: 2px;
+    }
+    #highlightBanner{
+        margin-top: 0;
+        padding: 40px 3px;
+    }
+
+    #highlightBanner .bannerBox{
+        height: 40vh;
+        min-width: 100px;
+    }
+
+    .bannerBox span{
+        font-size: 15px;
+    }
+
+    #newsLetter{
+        height: 20vh;
+    }
+    #newsLetter form {
+        width: 100%;
+    }
+
+    footer img{
+        height: 45px;
+    }
+    #columnContainer {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    footer .column{
+        margin-left: 20px;
+    }
+
+
+
+}
