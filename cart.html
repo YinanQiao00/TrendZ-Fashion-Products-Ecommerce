@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <script type="module" src="/mainJs.js"></script>
+    <script src="https://kit.fontawesome.com/b99738163d.js" crossorigin="anonymous"></script>
+    <link href="assets/images/iconTrendZ.ico" rel="icon" />
+    <link rel="stylesheet" href="mainStyle.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+    <a href="index.html"><img src="assets/images/mainLogo.jpg" class="logo" alt="TRENDZLogo" style="height: 40px; width: 120px"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="cart.html" id=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</header>
+
+<main>
+    <section id="mainBanner" class="cartMainBanner">
+        <h3>Don't forget your cart!</h3><br/>
+        <h2>Cart</h2>
+    </section>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="assets/images/products/p1.webp" alt="c1"></td>
+                    <td>snake-print stiletto sandals</td>
+                    <td>$756</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$756</td>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/products/p2.webp" alt="c1"></td>
+                    <td>Sauge wide-leg trousers</td>
+                    <td>$466</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$466</td>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/products/p3.jpeg" alt="c1"></td>
+                    <td>Medusa Head tote bag</td>
+                    <td>$2309</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$2309</td>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/products/p4.webp" alt="c1"></td>
+                    <td>floral-print gathered dress</td>
+                    <td>$4137</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$4137</td>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="total" class="section-p1">
+        <div id="code">
+            <h3>Apply Code</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Code">
+                <button>Apply</button>
+            </div>
+        </div>
+        <div id="subTotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotals</td>
+                    <td>$7668</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$7668</strong></td>
+                </tr>
+            </table>
+            <button>Proceed to checkout</button>
+        </div>
+
+    </section>
+
+
+</main>
+
+<footer class="section-p1">
+    <img src="assets/images/mainLogo.jpg" alt="mainLogo">
+    <div id="columnContainer">
+        <div class="column">
+            <h3>Contact</h3>
+            <p><strong>Address: </strong></p>
+            <p><strong>Email: </strong></p>
+            <p><strong>phone: </strong></p>
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h3>About</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Shipping Info</a></p>
+            <p><a href="#">Private Policy</a></p>
+            <p><a href="#">Return & Refund</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+        </div>
+
+        <div class="column">
+            <h3>Account</h3>
+            <p><a href="#">Sign In</a></p>
+            <p><a href="#">My Cart</a></p>
+            <p><a href="#">My Orders</a></p>
+            <p><a href="#">Tracking</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+
+        <div class="column install">
+            <h3>Install App Now</h3>
+            <p><a>From App Store or Google Play</a></p>
+            <div class="row">
+                <a><i class="fa-brands fa-app-store"></i></a>
+                <a><i class="fa-brands fa-google-play"></i></a>
+            </div>
+            <p><a>Secured payments</a></p>
+            <div class="row">
+                <a><i class="fa-brands fa-cc-visa"></i></a>
+                <a><i class="fa-brands fa-cc-mastercard"></i></a>
+                <a><i class="fa-brands fa-cc-paypal"></i></a>
+                <a><i class="fa-brands fa-cc-apple-pay"></i></a>
+                <a><i class="fa-brands fa-google-pay"></i></a>
+            </div>
+        </div>
+    </div>
+    <p id="copyRight">&copy;This page was made with<strong> &hearts;</strong> by <i>YinanQiao</i></p>
+
+</footer>
+
+</body>
+</html>
